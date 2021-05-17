@@ -1,0 +1,20 @@
+<form>
+
+  <div class="form-group">
+    <h3>Login do Sistema</h3>
+  </div>
+
+  <div class="form-group">
+    <label for="login">E-mail:</label>
+    <input type="email" class="form-control" [(ngModel)] = "usuario.login" id="login" name="login" placeholder="Informe o username">
+  </div>
+
+  <div class="form-group">
+    <label for="senha">E-Senha:</label>
+    <input type="password" class="form-control" [(ngModel)] ="usuario.senha" id="senha" name="senha" placeholder="Informe a senha">
+  </div>
+
+  <button type="button" class="btn btn-primary" (click)="login()">Acessar</button>
+
+</form>
+
